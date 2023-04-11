@@ -10,9 +10,9 @@ function validateInput(input) {
         }
         Main.main = function () {
             //aqui empieza tu codigo
-            var dato1 = validateInput(prompt('ingresa un dato'));
-            var dato2 = validateInput(prompt('ingresa otro dato'));
-            if (dato1 === dato2) {
+            var input1 = validateInput(prompt('ingresa un dato'));
+            var input2 = validateInput(prompt('ingresa otro dato'));
+            if (input1 === input2) {
                 console.log('Las palabras son iguales');
             }
             else {
