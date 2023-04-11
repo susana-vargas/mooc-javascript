@@ -10,7 +10,7 @@ function validateInput(input: string | null): string {
     class Main {
       static main() {
         //aqui empieza tu codigo
-        let password: string = validateInput(prompt('ingresa unacontraseña'));
+        let password: string = validateInput(prompt('ingresa una contraseña'));
         if (password === 'caput dracoins'){
             console.log('¡Bienvenido!');            
         } else {
