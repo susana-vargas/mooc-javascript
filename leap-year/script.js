@@ -14,8 +14,8 @@ function validateInput(input) {
             var year = Number(input);
             var mult4 = year % 4;
             var mult100 = year % 100;
-            var mul400 = year % 400;
-            if (mult4 === 0 && mult100 === 0) {
+            var mult400 = year % 400;
+            if (mult4 === 0 && (mult100 === 0 || !mult400)) {
                 console.log('año bisiesto!');
             }
             else {
