@@ -8,9 +8,6 @@ class Main {
         console.log(i);
         i++;
       }
-
-
-
     }
   
     validateInput(input: string | null): string {
