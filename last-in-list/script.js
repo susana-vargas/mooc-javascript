@@ -17,11 +17,12 @@ function leerEnteros() {
     }
     return numbers;
 }
-var a = 30;
-var parrafo = document.createElement('p');
-function crearUnParrafoDeNumero(number) {
-    parrafo.textContent = 'es mi parametro ' + number.toString();
+function parrafoDeNumero(numero) {
+    var parrafo = document.createElement('p');
+    parrafo.textContent = 'mi parametro es: ' + numero.toString();
     document.body.appendChild(parrafo);
 }
-crearUnParrafoDeNumero(a);
+parrafoDeNumero(13);
+//necesito una funcion que recibe como parametro un numero
+//crea un parrafo con ese numero y lo añade al dom
 //# sourceMappingURL=script.js.map

@@ -26,14 +26,20 @@ function leerEnteros(): number[] {
 
 
 
-const a: number = 30;
 
-const parrafo = document.createElement('p')!!;
-    
 
-function crearUnParrafoDeNumero (number: number): void{
-    parrafo.textContent = 'es mi parametro ' + number.toString()
-    document.body.appendChild(parrafo)
+
+
+
+function parrafoDeNumero (numero: number): void{ 
+  const parrafo = document.createElement('p');
+  parrafo.textContent = 'mi parametro es: ' + numero
+  document.body.appendChild(parrafo)
 }
 
-crearUnParrafoDeNumero(a)
+parrafoDeNumero(13)
+
+
+
+//necesito una funcion que recibe como parametro un numero
+//crea un parrafo con ese numero y lo añade al dom
