@@ -10,18 +10,13 @@ function validateInput(input) {
         }
         Main.main = function () {
             //aqui empieza tu codigo
-            //entrada del usuario
-            var number = +validateInput(prompt('ingresa un  numero'));
-            //evaluacion a realizar
-            if (number < 0) {
-                alert(number * -1);
-            }
-            else {
-                alert(number);
+            var input = validateInput(prompt('ingresa un numero'));
+            var numerito = Number(input);
+            if (numerito === 1984) {
+                console.log('orwell!');
             }
         };
         return Main;
     }());
     Main.main();
 })();
-//# sourceMappingURL=script.js.map
