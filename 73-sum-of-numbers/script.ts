@@ -11,8 +11,8 @@ function validateInput(input: string | null): string {
       static main() {
         //aqui empieza tu codigo    
 
-        //evaluacion a realizar
-        let sunofthrnumbers: number = 0;
+        //se inicializa una variable en 0
+        let sumaDeNumeros: number = 0;
 
         while(true){//bucle
         // aqui se lee la entrada del usuario
@@ -23,13 +23,12 @@ function validateInput(input: string | null): string {
         if(number === 0){
             break;
         }
-        //el programa incrementa el contador de numbers cada vez que el 
-        //que el usuario ingresa numeros
-        sunofthrnumbers = sunofthrnumbers + number
+        
+        sumaDeNumeros = sumaDeNumeros + number
         }
 
         //el programa muestra el numero total de numeros al final del programa
-        console.log('the sum of the numbers is: ' + sunofthrnumbers)
+        console.log('the sum of the numbers is: ' + sumaDeNumeros)
       }
     }
     Main.main();
