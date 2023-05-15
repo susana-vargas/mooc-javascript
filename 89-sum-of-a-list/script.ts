@@ -3,9 +3,11 @@ botonIniciar.addEventListener('click',main);
 
 function main(){
   const numbers: number[] = leerEnteros();
-  const suma: number = 0;
-  suma = suma + numbers
+  let suma: number = 0;
   for(const suma of numbers){
+    if (suma < numbers.length) {
+      console.log(suma + numbers.length);      
+    }
     
   }
 }

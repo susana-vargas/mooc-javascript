@@ -24,6 +24,7 @@ function validateInput(input: string | null): string {
             break;
         }
         
+        
         sumaDeNumeros = sumaDeNumeros + number
         }
 
