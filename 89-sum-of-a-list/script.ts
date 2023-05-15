@@ -4,13 +4,13 @@ botonIniciar.addEventListener('click',main);
 function main(){
   const numbers: number[] = leerEnteros();
   let suma: number = 0;
-  for(const suma of numbers){
-    if (suma < numbers.length) {
-      console.log(suma + numbers.length);      
+  for(const number of numbers){
+    suma = suma + number    
     }
-    
+    parrafo(suma)
   }
-}
+  
+  
 
 
 function leerEnteros(): number[]{
@@ -25,3 +25,14 @@ function leerEnteros(): number[]{
   }
     return numbers;    
 }
+
+function parrafo(contenidoDelParrafo: number) {
+  const parrafo = document.createElement('p');
+  parrafo.textContent = contenidoDelParrafo.toString();
+  document.body.appendChild(parrafo)
+}
+
+//pordia ser que sea una funcion inbocada que realize la suma de los numeros 
+//function sumaDeNumeros (){
+// 
+//}

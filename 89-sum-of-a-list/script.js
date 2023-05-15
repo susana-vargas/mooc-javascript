@@ -4,11 +4,10 @@ function main() {
     var numbers = leerEnteros();
     var suma = 0;
     for (var _i = 0, numbers_1 = numbers; _i < numbers_1.length; _i++) {
-        var suma_1 = numbers_1[_i];
-        if (suma_1 < numbers.length) {
-            console.log(suma_1 + numbers.length);
-        }
+        var number = numbers_1[_i];
+        suma = suma + number;
     }
+    parrafo(suma);
 }
 function leerEnteros() {
     var numbers = [];
@@ -22,4 +21,13 @@ function leerEnteros() {
     }
     return numbers;
 }
+function parrafo(contenidoDelParrafo) {
+    var parrafo = document.createElement('p');
+    parrafo.textContent = contenidoDelParrafo.toString();
+    document.body.appendChild(parrafo);
+}
+//pordia ser que sea una funcion inbocada que realize la suma de los numeros 
+//function sumaDeNumeros (){
+// 
+//}
 //# sourceMappingURL=script.js.map
