@@ -3,8 +3,11 @@ botonIniciar.addEventListener('click',main);
 
 function main(){
   const numbers: number[] = leerEnteros();
+  //se crea una variable que inicia en 0
   let suma: number = 0;
+  //en el bucle for se declara una constante  
   for(const number of numbers){
+   //se suma el numero 0 mas el numero de numeros
     suma = suma + number    
     }
     parrafo(suma)
@@ -32,7 +35,4 @@ function parrafo(contenidoDelParrafo: number) {
   document.body.appendChild(parrafo)
 }
 
-//pordia ser que sea una funcion inbocada que realize la suma de los numeros 
-//function sumaDeNumeros (){
-// 
-//}
+//aqui se ejecuta una funcion sobre sumar numeros
