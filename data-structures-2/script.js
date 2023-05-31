@@ -3,7 +3,9 @@ miBoton.addEventListener('click', main)
 
 function main () {
   const personas = personDataReader()
-  console.log(personas)
+  personas.forEach(({ name, age }) => {
+    crearParrafo(name, age)
+  })  
 }
 
 function personDataReader() {
@@ -11,14 +13,20 @@ function personDataReader() {
 
  let i = 1;
   while (i <= 5) {
-    let name = prompt('ingresa un nombre');
-    let age = prompt('ingresa una edad');
+    const name = prompt('ingresa un nombre');
+    const age = prompt('ingresa una edad');
     const persona = {
-      name: name,
-      age: age 
+      name,
+      age
     }
     personas.push(persona)
     i++;
   }
   return personas;
 } 
+
+function crearParrafo(name , age) {
+  const parrafo = document.createElement('p');
+  parrafo.textContent = 'la edad de ' + name + ' es ' + age + ' años' 
+  document.body.appendChild(parrafo);
+}
